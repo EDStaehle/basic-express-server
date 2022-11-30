@@ -1,7 +1,7 @@
 'use strict'
 
 const {app} = require('../src/server');
-supertest = require('supertest');
+const supertest = require('supertest');
 const request = supertest(app);
 
 describe('Validates name query for /person endpoint', () => {
