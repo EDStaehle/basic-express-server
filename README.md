@@ -10,19 +10,18 @@ Create a web server using CI and CD and get used to the general process of build
 
 ### Links and Resources
 
-- [ci/cd](https://github.com/EDStaehle/server-deployment-practice/actions/runs/3569908073) (GitHub Actions)
-- [prod development](https://four01d49-server-prod.onrender.com/)
-- [dev development](https://four01d49-server-dev.onrender.com/)
+- [ci/cd](https://github.com/EDStaehle/basic-express-server/actions) (GitHub Actions)
+- [prod development](https://basic-express-server-prod-rcp4.onrender.com/)
 
 ### Setup
 
 #### `.env` requirements (where applicable)
 
 see `.env.sample`
-i.e.
+
 
 - `PORT` - Port Number
-- `DATABASE_URL` - URL to the running Postgres instance/db
+
 
 #### How to initialize/run your application (where applicable)
 
@@ -35,16 +34,18 @@ i.e.
 - GET : `/bad` -  specific route to hit
 - Feature One: deploy to prod
 - GET : `/hello` - specific route to hit
+- GET : `/person` - specific route to hit
 
 #### Tests
 
-- How do you run tests?
-- Any tests of note?
+- npm test
+-
 - handles root path
 - handles invalid requests
 - handles errors
-- Describe any tests that you did not complete, skipped, etc
+- handles validator to ensure name is present
+- handles timestamp to ensure logger is present
 
 #### UML
 
-[UML](./assets/lab-01.png)
+[UML](./src/assets/class-02-uml.png)
